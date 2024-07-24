@@ -1,0 +1,14 @@
+file_format: "1"
+id: jellysplit
+name: JellySplit
+type: shield
+url: https://github.com/TommieTYX/JellySplit/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - jellysplit_left
+  - jellysplit_right

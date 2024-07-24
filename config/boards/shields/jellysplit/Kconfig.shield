@@ -1,0 +1,5 @@
+config SHIELD_JELLYSPLIT_LEFT
+    def_bool $(shields_list_contains,jellysplit_left)
+
+config SHIELD_JELLYSPLIT_RIGHT
+    def_bool $(shields_list_contains,jellysplit_right)

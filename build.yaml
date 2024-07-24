@@ -14,4 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: alixw
+    shield: jellysplit_left
+  - board: nice_nano_v2
+    shield: jellysplit_right
