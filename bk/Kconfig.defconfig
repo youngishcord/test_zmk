@@ -1,20 +1,7 @@
-if SHIELD_WYLD_DM_RIGHT
+if SHIELD_ALIXW
 
 config ZMK_KEYBOARD_NAME
-    default "Wyld DM"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_WYLD_DM_LEFT || SHIELD_WYLD_DM_RIGHT
-
-config ZMK_SPLIT
-    default y
-
-config SPI
-    default y
+    default "alixw"
 
 if ZMK_DISPLAY
 
@@ -24,6 +11,9 @@ config I2C
 config SSD1306
 	default y
 
+config SSD1306_REVERSE_MODE
+	default y
+
 endif # ZMK_DISPLAY
 
 if LVGL
@@ -31,7 +21,7 @@ if LVGL
 config LV_Z_VDB_SIZE
     default 64
 
-config LV_DPI_DEF
+config LV_Z_DPI
     default 148
 
 config LV_Z_BITS_PER_PIXEL
