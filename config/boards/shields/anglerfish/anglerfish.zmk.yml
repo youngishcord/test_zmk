@@ -1,0 +1,14 @@
+file_format: "1"
+id: anglerfish
+name: Anglerfish
+type: shield
+url: https://github.com/vinniefranco/anglerfish-splitk-keeb
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+siblings:
+  - anglerfish_left
+  - anglerfish_right
