@@ -1,0 +1,13 @@
+file_format: "1"
+id: test_zmk
+name: test_zmk
+type: shield
+url: https://github.com/youngishcord/test_zmk
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - test_build_l
+  # - test_zmk_right
