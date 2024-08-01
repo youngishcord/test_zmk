@@ -79,7 +79,7 @@
     &mo 1      &kp LCTRL   &lt 3 SPACE &kp LGUI     &kp N2          &kp C_PP  &kp LALT     &lt 1 SPACE    &lt 2 RET   &kp SLASH
             >;
 
-			sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN &inc_dec_kp PAGE_DOWN PAGE_UP &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		navnum_layer {
