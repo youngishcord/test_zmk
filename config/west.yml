@@ -1,34 +1,20 @@
-#manifest:
-#  remotes:
-#    - name: zmkfirmware
-#      url-base: https://github.com/zmkfirmware
-#  projects:
-#    - name: zmk
-#      remote: zmkfirmware
-#      revision: main
-#      import: app/west.yml
-#  self:
-#    path: config
-
 manifest:
   remotes:
-    - name: zmkfirmware
+#    - name: zmkfirmware
+#      url-base: https://github.com/zmkfirmware
+    - name: petejohanson
       url-base: https://github.com/petejohanson
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: claybford
+      url-base: https://github.com/claybford
+    # Additional modules containing boards/shields/custom code can be listed here as well
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: claybford #petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
-    - name: zmk-split-peripheral-input-relay
-      remote: badjeff
-      revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
+    - name: cirque-input-module
+      remote: petejohanson
       revision: main
   self:
     path: config

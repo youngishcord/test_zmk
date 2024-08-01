@@ -1,0 +1,16 @@
+file_format: "1"
+id: ergothwack
+name: ergoTHWACK
+type: shield
+url: https://github.com/claybford/ergothwack
+requires: [pro_micro]
+exposes:
+  - i2c_glidepoint
+features:
+  - keys
+  - encoder
+  - underglow
+  - pointer
+siblings:
+  - ergothwack_left
+  - ergothwack_right
