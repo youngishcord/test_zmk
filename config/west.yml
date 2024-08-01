@@ -1,20 +1,13 @@
 manifest:
   remotes:
-#    - name: zmkfirmware
-#      url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
-    - name: claybford
-      url-base: https://github.com/claybford
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: DiogoDoreto
+      url-base: https://github.com/DiogoDoreto
   projects:
     - name: zmk
-      remote: claybford #petejohanson
-      revision: feat/pointers-move-scroll
+      remote: DiogoDoreto
+      revision: waterfowl-encoders
       import: app/west.yml
-    - name: cirque-input-module
-      remote: petejohanson
-      revision: main
   self:
     path: config
