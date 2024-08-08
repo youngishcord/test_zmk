@@ -7,12 +7,17 @@ manifest:
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
-    - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
-    - name: zmk
+      - name: zmk
       remote: petejohanson
       revision: power/domains-and-device-runtime
       import: app/west.yml
+    - name: zmk_scroll
+      remote: zmkfirmware
+      revision: feat/pointers-move-scroll
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: inorichi
+      revision: main
+
   self:
     path: config
