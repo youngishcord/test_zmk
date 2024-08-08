@@ -41,7 +41,7 @@ if SHIELD_TEST_ZMK_LEFT || SHIELD_TEST_ZMK_RIGHT
 
         config LV_Z_MEM_POOL_SIZE
             default 8192
-            
+
         config LV_Z_VDB_SIZE
             default 64
 
