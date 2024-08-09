@@ -7,7 +7,7 @@ manifest:
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
-      - name: zmk
+    - name: zmk
       remote: petejohanson
       revision: power/domains-and-device-runtime
       import: app/west.yml
